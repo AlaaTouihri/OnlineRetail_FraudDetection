@@ -1,146 +1,76 @@
-# OnlineRetail Fraud Detection
+# OnlineRetail_FraudDetection
 
-Ce projet consiste à analyser un dataset e-commerce et à construire un modèle de **détection de transactions frauduleuses**. Il s'agit d'un projet complet incluant préparation des données, analyse exploratoire, modélisation et visualisations.
-
----
-
-## 📌 Objectif du projet
-
-Développer un pipeline de data science permettant de :
-
-* Comprendre la structure du dataset Online Retail.
-* Nettoyer et préparer les données pour l'analyse.
-* Concevoir des features pertinentes comme `TotalPrice`.
-* Construire un modèle de classification pour prédire les transactions frauduleuses.
-* Évaluer les performances du modèle et analyser les résultats.
+##  Description
+Projet de détection de fraude basé sur le dataset *Online Retail*. L'objectif est d'identifier les transactions suspectes en appliquant des techniques d'analyse de données et de machine learning. Le projet inclut le nettoyage des données, l'exploration, le feature engineering et la mise en place de modèles de détection d'anomalies.
 
 ---
 
-## 📂 Structure du projet
+##  Objectifs
+- Identifier les transactions frauduleuses dans un dataset e-commerce.  
+- Explorer les données et visualiser les tendances et anomalies.  
+- Construire des features pertinentes pour la détection de fraude.  
+- Appliquer des modèles de machine learning pour détecter les comportements suspects.  
+- Générer des insights exploitables pour renforcer la sécurité des opérations.
 
-```
+---
+
+## 🗂 Structure du projet
+
 OnlineRetail_FraudDetection/
 │
-├─ data/                    # Dataset original et données nettoyées
-├─ notebooks/               # Notebook Jupyter contenant toute l'analyse
-├─ scripts/                 # (Optionnel) Scripts Python si pipeline séparé
-├─ reports/
-│   └─ figures/             # Graphiques générés (matrice confusion, etc.)
-└─ README.md
-```
+├─ data/ # Dataset utilisé
+│ └─ Online_Retail.csv
+│
+├─ notebooks/ # Notebooks d'analyse
+│ └─ OnlineRetail_FraudDetection.ipynb
+│
+├─ reports/ # Rapports et visualisations
+│ └─ figures/
+│ ├─ Distribution des montants des transactions.png
+│ ├─ Top 10 pays par nombre de transactions.png
+│ ├─ Top 10 produits vendus.png
+│ ├─ Transactions suspectes détectées par Isolation Forest.png
+│ └─ Évolution des ventes par mois.png
+│
+└─ README.md # Ce fichier
 
 ---
 
-## 🧪 Contenu du notebook
-
-Le fichier principal du projet est :
-
-```
-notebooks/fraud_detection.ipynb
-```
-
-Il contient :
-
-* 📊 **Exploration des données** (EDA)
-* 🧹 **Nettoyage du dataset**
-* ⚙️ **Feature engineering**
-* 🤖 **Modélisation** (Random Forest ou autre)
-* 📈 **Évaluation du modèle** :
-
-  * Matrice de confusion
-  * Accuracy, Recall, Precision
-  * Courbe ROC (si appliqué)
-
-Les graphiques générés sont exportés dans :
-
-```
-reports/figures/
-```
+## 🛠 Technologies utilisées
+- Python 3.x  
+- Pandas, NumPy (traitement des données)  
+- Matplotlib, Seaborn (visualisations)  
+- Scikit-learn (machine learning, détection d’anomalies)  
+- Jupyter Notebook  
 
 ---
 
-## 🛠️ Installation et exécution
-
-### 1. Cloner le projet
-
+##  Instructions pour reproduire le projet
+1. Cloner le repository :  
 ```bash
-git clone https://github.com/USERNAME/OnlineRetail_FraudDetection.git
-cd OnlineRetail_FraudDetection
-```
+git clone https://github.com/AlaaTouihri/OnlineRetail_FraudDetection.git
+git clone https://github.com/AlaaTouihri/OnlineRetail_FraudDetection.git
+Installer les dépendances (si nécessaire) :
 
-### 2. Installer les dépendances
+bash
+Copier le code
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+Ouvrir le notebook dans Jupyter :
 
-```bash
-pip install -r requirements.txt
-```
+bash
+Copier le code
+jupyter notebook notebooks/OnlineRetail_FraudDetection.ipynb
+Suivre l’analyse étape par étape dans le notebook.
 
-(Si tu veux, je peux te générer le fichier `requirements.txt`.)
+Résultats
+Visualisation de la distribution des montants de transactions.
 
-### 3. Ouvrir le notebook
+Classement des top produits et pays par nombre de transactions.
 
-```bash
-jupyter notebook notebooks/fraud_detection.ipynb
-```
+Identification des transactions suspectes via Isolation Forest.
 
----
+Suivi de l’évolution des ventes par mois.
 
-## 📘 Dataset
+🔗 Lien du projet
+OnlineRetail_FraudDetection sur GitHub
 
-Le dataset utilisé provient de :
-
-* **Online Retail Dataset (UCI Machine Learning Repository)**
-
-Il contient :
-
-* Numéro de facture
-* Produit
-* Quantité
-* Prix unitaire
-* Pays
-* Identifiant client
-
----
-
-## 🧠 Modèle utilisé
-
-Un modèle de classification basé sur :
-
-* **RandomForestClassifier**
-
-Pourquoi ?
-
-* Performant
-* Robuste au bruit
-* Gère bien les variables numériques
-
----
-
-## 📊 Résultats
-
-Les principaux résultats obtenus :
-
-* **Matrice de confusion** (exportée dans `reports/figures/`)
-* **Métriques complètes** via `classification_report`
-
----
-
-## 🚀 Améliorations possibles
-
-* Optimisation des hyperparamètres (GridSearch / RandomSearch)
-* Ajout de nouvelles features
-* Tests avec d'autres modèles (XGBoost, SVM...)
-* Mise en place d'un tableau de bord (Streamlit / Dash)
-
----
-
-## 👤 Auteur
-
-**Alaa Touihri**
-Data Analyst | Machine Learning | Python | SQL
-LinkedIn : [https://www.linkedin.com/in/alaa-touihri-a03a96122](https://www.linkedin.com/in/alaa-touihri-a03a96122)
-
----
-
-## 📄 Licence
-
-Ce projet est libre d'utilisation pour le travail académique et la démonstration professionnelle.
