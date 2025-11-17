@@ -1,4 +1,9 @@
-# OnlineRetail_FraudDetection
+# OnlineRetail_FraudDetection4
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![GitHub last commit](https://img.shields.io/github/last-commit/AlaaTouihri/OnlineRetail_FraudDetection)
+
 
 ##  Description
 Projet de détection de fraude basé sur le dataset *Online Retail*. L'objectif est d'identifier les transactions suspectes en appliquant des techniques d'analyse de données et de machine learning. Le projet inclut le nettoyage des données, l'exploration, le feature engineering et la mise en place de modèles de détection d'anomalies.
